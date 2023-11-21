@@ -1,0 +1,17 @@
+<div class="text-center">
+  <h2>{{title}}</h2>
+  <p>{{contents}}</p>
+  <p>Created by {{user.username}} on {{format_date date_created}}</p>
+  </p>
+  <p>
+<button data-id={{id}} class="btn btn-primary submitBtn">Add Comment </button>
+  </p>
+
+  <textarea id="comment" cols="30" rows="10"></textarea>
+
+  <section>
+    {{#each comments}}
+      <p>{{commentBody}}</p>
+    {{/each}}
+  </section>
+</div>
